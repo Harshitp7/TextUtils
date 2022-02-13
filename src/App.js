@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-// import About from './components/About';
+
 import React, { useState } from 'react';
 import Alert from './components/Alert';
 // import {
@@ -52,6 +52,7 @@ function App() {
     {/* <Router> */}
     <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
     <Alert alert={alert}/>
+    
     <div className="container my-3">
     {/* <Switch> */}
     {/* /users --> Component 1
@@ -60,7 +61,7 @@ function App() {
             <About />
           </Route> */}
           {/* <Route exact path="/"> */}
-            <TextForm showAlert={showAlert} heading="Enter the text here to analyze" mode={mode}/>
+            <TextForm showAlert={showAlert} heading="Enter your text here" mode={mode}/>
           {/* </Route> */}
     {/* </Switch> */}
     </div>
